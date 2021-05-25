@@ -14,4 +14,5 @@ Personal notes on machine learning concepts I learned and found interesting (cit
   * Images are not loading will fix
 * RNN's: https://docs.google.com/document/d/1Jd8yXJ0RnPGAKflvspuyklPNES31x598QX780Su3yt8/edit?usp=sharing
 * LSTM's: https://docs.google.com/document/d/1ckTsGtGOywOzVNx583WTVQLHj5PRvQEvM0B-sGk80Pg/edit?usp=sharing
+* GloVe (word embedding library): https://docs.google.com/document/d/12hGCy2vO7NBOqCCK0FQvtqWzdMdbehB9PH0qOV1C8iU/edit?usp=sharing 
 
