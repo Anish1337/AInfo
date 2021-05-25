@@ -1,5 +1,5 @@
 # AInfo
-Personal notes on machine learning concepts I learned and found interesting (citations within document).
+Personal notes on machine learning concepts I learned and found interesting (citations within documents).
 
 ## Changelog
 ### 25/05/2021
