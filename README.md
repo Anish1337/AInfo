@@ -2,6 +2,7 @@
 Personal notes on machine learning concepts I learned and found interesting (citations within document).
 
 ## Changelog
+### 25/05/2021
 * Posted raw links to notes I previously had.
 * Reviewed the basics of html.
 
