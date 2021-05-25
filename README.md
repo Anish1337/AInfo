@@ -5,6 +5,7 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 ### 25/05/2021
 * Posted raw links to notes I previously had.
 * Reviewed the basics of html.
+* TODO: Convert the rawlinks to pages of a basic html website
 
 
 ## Raw Links. 
