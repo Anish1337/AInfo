@@ -10,5 +10,5 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 
 ### 27/05/2021
 * Created a basic html page with a menu bar and drop downs.
-* Need to Add the notes to their respective page on the website. 
+* Need to add the notes to their respective page on the website. 
 * Github is not rendering the html file as a website will fix.
