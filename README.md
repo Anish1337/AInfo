@@ -14,5 +14,7 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 * Github is not rendering the html file as a website will fix.
 
 ### 29/05/2021
-* Moved main.html to header.php, installing MAMP to render website from localhost.
-* Still looking for a way to see the rendered website on Github.
+* Renamed main.html to header.php
+* Used MAMP to view php files from localhost
+* Website now has a static header across all sub pages.
+* TODO: Paste the text from the notes to the subpages
