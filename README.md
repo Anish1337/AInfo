@@ -12,3 +12,7 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 * Created a basic html page with a menu bar and drop downs.
 * Need to add the notes to their respective page on the website. 
 * Github is not rendering the html file as a website will fix.
+
+### 29/05/2021
+* Moved main.html to header.php, installing MAMP to render website from localhost.
+* Still looking for a way to see the rendered website on Github.
