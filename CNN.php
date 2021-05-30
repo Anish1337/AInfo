@@ -61,6 +61,6 @@ minimum cost, or in other words, the MLP (and therefore the entire CNN) will be 
 Summary of CNN functionality
 The entire process of a CNN can be visualized by the interactive visualization for neural networks project by Adam Harvey . It represents a CNN with two convolutional layers (2nd and 3rd layer), that produces 6 feature maps each. They are then put through two pooling layers (4th and 5th layer), the digit is now unrecognizable and reduced in size.Flattening (6th layer or first line) turns the entire set of data into a one-dimensional array. Finally, the training from the MLP in order to reach a prediction (top-most scale) is shown at the very top. As shown in the picture the numbers 3 is highlighted in blue (on the scale) and was the first guess of the CNN.
 
-
+This is a test
   </body>
 </html>
