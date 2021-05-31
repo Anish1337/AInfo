@@ -17,8 +17,9 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 * Renamed main.html to header.php
 * Used MAMP to view php files from localhost
 * Website now has a static header across all sub pages.
-* TODO: Paste the text from the notes to the subpages (start with the CNN page)
+* TODO: Paste the text from the notes to the subpages
 
-## 31/05/2021
-* Formatted CNN notes (added headers, newlines, subheaders)
-* TODO: Insert images from notes and citations!
+### 30/05/2021
+* Added sample text to subpage (CNN.php)
+* Setup Github Desktop
+* TODO: Organize the text and add images.
