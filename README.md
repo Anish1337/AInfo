@@ -1,6 +1,9 @@
 # AInfo
 Personal notes on machine learning concepts I learned and found interesting (citations within documents).
 
+# Link to website
+Link will go here (figuring out Github hosting)
+
 ## Changelog
 ### 25/05/2021
 * Found notes I previously had on CNN's, RNN's, LSTM's, GloVe, and Eigenfaces.
