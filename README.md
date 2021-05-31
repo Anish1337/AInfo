@@ -23,3 +23,7 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 * Added sample text to subpage (CNN.php)
 * Setup Github Desktop
 * TODO: Organize the text and add images.
+
+### 31/05/2021
+* Formatted notes for the CNN page (headers, subheaders, newlines)
+* TODO: Add pictures and citations!
