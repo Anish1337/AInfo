@@ -16,7 +16,7 @@ include 'header.php';
 <p>
   In his paper, Yann Lecun proposed the input images fed into the CNN to have three layers: height, width, and depth (shown below). The reason for the three layers is due to the nature of the image. The height and width of the picture require two layers, and the third layer is for the color of the image (some variation of the colors red, blue and green).
 </p>
-
+<img src="./CNN/Fig1/">
 <h3> Figure 1, (Lightning Blade,2018) </h3>
 
 <h3>
