@@ -2,7 +2,7 @@
 Personal notes on machine learning concepts I learned and found interesting (citations within documents).
 
 # Link to website
-Link will go here (figuring out Github hosting)
+https://anish1337.github.io/
 
 ## Changelog
 ### 25/05/2021
