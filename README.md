@@ -30,3 +30,8 @@ https://anish1337.github.io/AInfo.html
 ### 31/05/2021
 * Formatted notes for the CNN page (headers, subheaders, newlines)
 * TODO: Add pictures and citations!
+
+### 02/06/2021
+* Setup Github pages (converterd php to js code to display header)
+* Fixed images not loading.
+* TODO: Change image size, upload more images, finish up CNN page
