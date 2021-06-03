@@ -1,14 +1,22 @@
-<?php
-include 'header.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>CNN theory</title>
-  </head>
-
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+    });
+    </script>
+    </head>
+    <body>
+    <div id="header"></div>
+    </body>
   <body>
 <h1>
     Structure of a CNN
@@ -16,9 +24,10 @@ include 'header.php';
 <p>
   In his paper, Yann Lecun proposed the input images fed into the CNN to have three layers: height, width, and depth (shown below). The reason for the three layers is due to the nature of the image. The height and width of the picture require two layers, and the third layer is for the color of the image (some variation of the colors red, blue and green).
 </p>
-<img src="./CNN/Fig1/">
+<img src="images/CNN/Fig1.png" width="400" height="400">
 <h3> Figure 1, (Lightning Blade,2018) </h3>
 
+<img src="images/CNN/Fig2.png" width="400" height="400">
 <h3>
   Figure 2.An example of a 4x4 image being fed into a CNN (Alexandr Honchar, 2017).
 </h3>
@@ -31,12 +40,14 @@ include 'header.php';
 <p>
   Convolutions take place in the convolutional layer of the CNN. The word convolution in mathematics means combining two functions to create a third one. In the CNN, convolutions are used to produce a feature map, by using a filter. The filter is a set window or square that slides across the image (shown in figure 3). A mathematical operation is performed and then the output of that operation sent to the feature map, the filter then moves to the right this is known as a stride. Once the filter reaches the end of the first row, it moves down to the second row and repeats the process. The feature map is the computerized version of the biological receptive field. The stride will produce a feature map that has a smaller size, so the concept of padding (where a pixel value of zero is surrounded by a padding of zeros) is used to maintain the same size. Through the use of padding, the performance of the CNN is increased as the filter fits the input, not wasting any pixels.(Hien, Dang Ha, 2017)
   </p>
+  <img src="images/CNN/Fig3.png" width="400" height="400">
   <h3>
   Figure 3. The destination pixel is on the feature map, the source pixel is on the input image (Daphne Cornelisse, 2018)
 </h3>
 <p>
   When a feature map of a different filter is used (for instance in figure 3 the filter used is 3x3), this produces a different feature map. This process repeats, producing several feature maps. The feature maps are stacked on top of each other (another mathematical operation is used to “add” all the layers together), and this stacked map what is outputted by the convolutional layer of the CNN.
 </p>
+<img src="images/CNN/Fig4.png" width="400" height="400">
 <h3>
   Figure 4.The lines represent mathematical operations from one map to another.(Dang ha The Helian,2017).
 </h3>
@@ -52,6 +63,7 @@ include 'header.php';
 <p>
   The purpose of the pooling layer is to reduce the size of the stacked feature map. This layer is almost always used as with a reduced stacked feature map, there are fewer parameters, computations, training time as well as a reduced risk of overfitting. Overfitting is a term used in statistics that refers to a data model being biased or heavily affected by a small amount of data. The most common way of using pooling is through the max pooling method (Ardent Dertat, 2017). This is when only the highest pixel value (within a certain window) of the feature map is taken (shown in figure.5 below). This way, the accuracy of the pixel value is kept and the new feature map is condensed.
 </p>
+<img src="images/CNN/Fig5.png" width="500" height="500">
 <h3>
   Figure 5. A two-dimensional representation of max pooling. The window is 2x2, showing the highest pixel value being taken and outputted in the new map. (Max pool)
 </h3>
@@ -61,6 +73,7 @@ include 'header.php';
 <p>
   After both the convolutional and pooling layers of the CNN, the digits are now ready to be trained. The classification layer is where the CNN assigns a probability to the image being predicted by the CNN through the use of a multi-layered perceptron or MLP. For example, when training on handwritten digits by MNIST, the computer will determine the probability for each digit from 0-9 (shown in figure 6 below).
 </p>
+<img src="images/CNN/Fig6.png" width="500" height="500">
 <h3>
   Figure 6. The CNN classification of digits (kdnuggets,2016)
 </h3>
@@ -79,6 +92,7 @@ include 'header.php';
 <p>
   The structure of the multi-layered perceptron (MLP) is similar to figure 7 shown below. It is primarily composed of three parts the input, hidden and output layers (Kang Nahua, 2017). The input layers (shown in blue) is where the one-dimensional stacked feature map from the previous step is inputted. The hidden layers are shown in purple, note that each perceptron (or purple circle) is connected to all of the inputs (blue circles). In the picture, there is only one hidden layer but good neural networks (and CNN’s) require more. Finally, the output layer is shown in orange.
 </p>
+<img src="images/CNN/Fig7.png" width="500" height="500">
 <h3>
   Figure 7 Structure of a MLP (Nahua Kang,2017)
 </h3>
@@ -115,7 +129,7 @@ include 'header.php';
 <h2>
   Summary of CNN functionality
 </h2>
-
+<img src="images/CNN/summary.png" width="500" height="500">
 <p>
   The entire process of a CNN can be visualized by the interactive visualization for neural networks project by Adam Harvey . It represents a CNN with two convolutional layers (2nd and 3rd layer), that produces 6 feature maps each. They are then put through two pooling layers (4th and 5th layer), the digit is now unrecognizable and reduced in size.Flattening (6th layer or first line) turns the entire set of data into a one-dimensional array. Finally, the training from the MLP in order to reach a prediction (top-most scale) is shown at the very top. As shown in the picture the numbers 3 is highlighted in blue (on the scale) and was the first guess of the CNN.
 </p>
