@@ -35,3 +35,8 @@ https://anish1337.github.io/AInfo.html
 * Setup Github pages (converterd php to js code to display header)
 * Fixed images not loading.
 * TODO: Change image size, upload more images, finish up CNN page
+
+### 03/06/2021
+* Added more images to CNN notes, (some images still need to be resized)
+* Added changes to github.io so that website can be viewed.
+* TODO: Clean up images/layout and begind next notes. Also make home page look better.
