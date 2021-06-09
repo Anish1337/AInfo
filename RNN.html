@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CNN theory</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+    });
+    </script>
+    </head>
+    <body>
+    <div id="header"></div>
+
+
+    <b>Vanishing gradient problem:</b> <br>
+    Sequential, time series data (stocks, sentence predictions,speech prediction,video frames, any sort of sequence labelling) requires a sequential model such as a RNN (shown below).
+<br>
+
+<img src="images/RNN/1.png" width="600" height="300"><br>
+  <b>  Unrolled RNN structure</b><br>
+    The activation function (orange box) is the sigmoid function this helps...
+    x(t) describes an input vector at time step t
+    c(t) describes past information/learned knowledge at time t (encoded as c(x(t))),also known as cell state
+    Wrec and Win  are to be updated during the backpropagation step. They can be thought of as a single weight W
+    h(t) describes
+
+  <b>  Backpropagation in RNN’s:</b> Backpropagation is how the RNN learns, through a process similar to gradient descent the weights are adjusted and error function (E) is minimized each iteration, allowing for the RNN to be more accurate.<br>
+
+    The partial derivative of the error term (E) with regard to the weight W, can be represented as the summation of partial derivatives  of the error at each time step with regard to the partial derivative of the weight at each time step.
+
+  <br>  <b>The error gradient:</b><br>
+<img src="images/RNN/2.png" width="600" height="300"><br>
+
+    This is the function to be minimized to increase the accuracy or the model.
+
+  <br>  <b>Minimizing error</b><br>
+<img src="images/RNN/3.png" width="600" height="300"><br>
+    The weights are updated by subtracting the learning rate multiplied by the partial derivative of the error with respect to the weight. The learning rate determines how large or small the step taken to reach the minimum of the error function is.
+
+
+
+
+    <b>Mathematical explanation for the vanishing gradient problem in RNN’s</b><<br>
+
+    Each error gradient can be expressed as the ... <br>
+
+<img src="images/RNN/4.png" width="600" height="300"><br>
+
+
+    Ct  can be expressed as an output from the previous cell<br>
+
+<img src="images/RNN/5.png" width="600" height="300"><br>
+
+    <b>Compute the gradient of c(t)</b><br>
+    <img src="images/RNN/6.png" width="600" height="300"><br>
+
+    Plugging (2) into (1) the backpropagation gradient becomes<br>
+
+<img src="images/RNN/7.png" width="600" height="300"><br>
+    When k is large, the gradient starts to vanish (approach 0). This is because the derivative of the activation function (tanh) is smaller than one, and at each iteration (large k) it keeps getting smaller.
+
+    <br><b>The problem with vanishing gradient:</b><br>
+
+<img src="images/RNN/8.png" width="600" height="300"><br>
+    The activation function portion is multiplied with the other expressions, making the gradient approach 0<br>
+<img src="images/RNN/9.png" width="600" height="300"><br>
+    At some time k<br>
+<img src="images/RNN/10.png" width="600" height="300"><br>
+    This results in the weights not updating, error is not minimized (no learning happens)<br>
+<img src="images/RNN/11.png" width="600" height="300"><br>
+
+    How LSTM fix the vanishing gradient problem<br>
+
+  <b>  Forget gate output:</b><br>
+    Determine what information should be forgotten depending on the new input<br>
+
+
+<img src="images/RNN/12.png" width="600" height="300"><br>
+
+
+
+
+
+  <b>  Input gate output:</b><br>Controls what information will be encoded in the cell state<br>
+<img src="images/RNN/13.png" width="600" height="300"><br>
+
+
+    <b>Output gate output:</b><br>
+
+
+<img src="images/RNN/14.png" width="600" height="300"><br>
+
+  <b>  Cell state output:</b><br>
+
+<img src="images/RNN/15.png" width="600" height="300"><br>
+
+
+    <b>Recall RNN shortcoming<b/><br>
+
+<img src="images/RNN/16.png" width="600" height="300"><br>
+
+
+  <b>  However in an lstm, we can express the ct term by</b><br>
+
+<img src="images/RNN/17.png" width="600" height="300"><br>
+
+    <b>Therefore in an lstm,</b><br>
+    <img src="images/RNN/18.png" width="600" height="300"><br>
+
+  <b>  Which can be further simplified to</b><br>
+
+
+<img src="images/RNN/19.png" width="600" height="300"><br>
+  <b>  Plugging this component back into the error gradient,</b><br>
+  <img src="images/RNN/20.png" width="600" height="300"><br>
+    <b>Now,</b><br>
+
+     <b>As the forget gate allows for important information to be remembered, and there are no tanh outputs being multiplied like with RNN’s.</b><br>
+
+
+
+
+Sources:<br>
+     https://medium.com/datadriveninvestor/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577<br>
+     https://weberna.github.io/blog/2017/11/15/LSTM-Vanishing-Gradients.html<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>
