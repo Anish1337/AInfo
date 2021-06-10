@@ -1,6 +1,6 @@
 # AInfo
 The goal of this project is to crete an organized library of machine learning concepts by: 
-* Convert notes (text and images) into html page for:
+* Converting notes (text and images) into a website format, for:
     * Computer Vision
     * NLP
     * Deep Learning
