@@ -8,8 +8,8 @@ The goal of this project is to crete an organized library of machine learning co
     * Unsupervised Learning
     * Math Review
     * Academic Paper Summaries
-* Format the website (design).
-* Add useful functions (searching, runnable code.
+* Formating the website (design).
+* Adding useful functions (searching, runnable code.
 
 # Link to website
 https://anish1337.github.io/AInfo.html
