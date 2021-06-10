@@ -1,5 +1,15 @@
 # AInfo
-Personal notes on machine learning concepts I learned and found interesting (citations within documents).
+The goal of this project is to crete an organized library of machine learning concepts by: 
+* Convert notes (text and images) into html page for:
+    * Computer Vision
+    * NLP
+    * Deep Learning
+    * Supervised Learning
+    * Unsupervised Learning
+    * Math Review
+    * Academic Paper Summaries
+* Format the website (design).
+* Add useful functions (searching, runnable code.
 
 # Link to website
 https://anish1337.github.io/AInfo.html
