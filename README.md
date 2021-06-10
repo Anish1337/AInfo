@@ -4,6 +4,12 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 # Link to website
 https://anish1337.github.io/AInfo.html
 
+#Goals:
+1. Convert notes (text and images) into html page
+2. Format the website (design).
+3. Add useful functions (searching, runnable code)
+
+
 ## Changelog
 ### 25/05/2021
 * Found notes I previously had on CNN's, RNN's, LSTM's, GloVe, and Eigenfaces.
@@ -40,3 +46,7 @@ https://anish1337.github.io/AInfo.html
 * Added more images to CNN notes, (some images still need to be resized)
 * Added changes to github.io so that website can be viewed.
 * TODO: Clean up images/layout and begind next notes. Also make home page look better.
+
+### 10-06-2021
+* Began transferring notes for RNN (Deep Learning) and Matricies (Mathe Review).
+* TODO: Cite images, add to gradient descent notes, add to home page.
