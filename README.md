@@ -4,7 +4,7 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 # Link to website
 https://anish1337.github.io/AInfo.html
 
-#Goals:
+# Goals:
 1. Convert notes (text and images) into html page
 2. Format the website (design).
 3. Add useful functions (searching, runnable code)
