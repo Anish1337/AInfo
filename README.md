@@ -14,11 +14,6 @@ The goal of this project is to crete an organized library of machine learning co
 # Link to website
 https://anish1337.github.io/AInfo.html
 
-# Goals: Crete an organized library of machine learning concepts.
-1. Convert notes (text and images) into html page
-2. Format the website (design).
-3. Add useful functions (searching, runnable code)
-
 
 ## Changelog
 ### 25/05/2021
