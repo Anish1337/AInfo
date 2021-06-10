@@ -4,7 +4,7 @@ Personal notes on machine learning concepts I learned and found interesting (cit
 # Link to website
 https://anish1337.github.io/AInfo.html
 
-# Goals:
+# Goals: Crete an organized library of machine learning concepts.
 1. Convert notes (text and images) into html page
 2. Format the website (design).
 3. Add useful functions (searching, runnable code)
@@ -48,5 +48,5 @@ https://anish1337.github.io/AInfo.html
 * TODO: Clean up images/layout and begind next notes. Also make home page look better.
 
 ### 10/06/2021
-* Began transferring notes for RNN (Deep Learning) and Matricies (Mathe Review).
+* Began transferring notes for RNN (Deep Learning) and Matricies (Math Review).
 * TODO: Cite images, add to gradient descent notes, add to home page.
