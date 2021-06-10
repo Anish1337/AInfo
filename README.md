@@ -47,6 +47,6 @@ https://anish1337.github.io/AInfo.html
 * Added changes to github.io so that website can be viewed.
 * TODO: Clean up images/layout and begind next notes. Also make home page look better.
 
-### 10-06-2021
+### 10/06/2021
 * Began transferring notes for RNN (Deep Learning) and Matricies (Mathe Review).
 * TODO: Cite images, add to gradient descent notes, add to home page.
